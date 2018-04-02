@@ -20,11 +20,11 @@ platform, giving each piece a decent amount of space between printing rafts.
 
 At first everything looked rosy...
 
-<iframe width="600" height="400" src="http://www.youtube.com/embed/xh75RyVNcL0" frameborder="0" allowfullscreen></iframe>
+{% include youtubeplayer.html id="xh75RyVNcL0" %}
 
 ...and then.
 
-<iframe width="600" height="400" src="http://www.youtube.com/embed/I3WV6VwpNL8" frameborder="0" allowfullscreen></iframe>
+{% include youtubeplayer.html id="I3WV6VwpNL8" %}
 
 Due to the generous spacing between barbs each unit had an independent raft.
 This made it fairly easy for the print head to knock one (or more!) of them

@@ -10,7 +10,7 @@ characterising how a small (drug-like) molecule binds to a protein using
 high-performance computing. I've put together a video on YouTube showcasing
 some of the highlights. It's pretty.
 
-<iframe width="600" height="400" src="http://www.youtube.com/embed/Id_87K_xVDs" frameborder="0" allowfullscreen></iframe>
+{% include youtubeplayer.html id="Id_87K_xVDs" %}
 
 Read the full scientific paper
 [here](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004811).
