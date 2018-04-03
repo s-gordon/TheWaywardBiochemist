@@ -15,9 +15,15 @@ layout: default
       {% endif %}</p>
   </header> -->
 
-  <div itemprop="articleBody">
+  <!-- <div itemprop="articleBody"> -->
+  <!--   {{ content }} -->
+  <!-- </div> -->
+
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
+    {% include sharebar.html %}
   </div>
+
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
