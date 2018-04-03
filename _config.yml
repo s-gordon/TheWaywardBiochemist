@@ -40,7 +40,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - config.ru
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor
+  # - vendor/cache/
+  # - vendor/gems/
+  # - vendor/ruby/
