@@ -177,6 +177,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - vendor/
 
 # prose.io config
 prose:
@@ -192,7 +193,6 @@ prose:
     - /css
     - /img
     - /js
-    - vendor
   metadata:
     _posts:
       - name: "layout"
