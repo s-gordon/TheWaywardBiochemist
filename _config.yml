@@ -192,6 +192,7 @@ prose:
     - /css
     - /img
     - /js
+    - vendor
   metadata:
     _posts:
       - name: "layout"
