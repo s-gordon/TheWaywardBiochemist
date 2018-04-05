@@ -4,7 +4,10 @@ title: "A Better Insert for Settlers of Catan"
 date: 2018-01-29 17:27:05 +1100
 comments: true
 sharing: true
-categories: boardgames
+categories: [Board Games]
+tags:
+- Board games
+- Inserts
 ---
 Settlers of Catan is one of my favourite games. Unfortunately the huge number
 of pieces make packing it up and putting it away a nightmare. There must be a

@@ -4,13 +4,19 @@ title: "Cleaning Up Your BibTex Files with Bibtexformat and Sed"
 date: 2018-04-03 11:06:28 +1100
 comments: true
 sharing: true
-categories:
-- programming
-- bibtex
-- latex
+categories: Programming
+tags:
 - vim
+- bibtex
+- biblatex
+- latex
+- awk
+- sed
+- citations
+- programming
+- unix
+- bibtexformat
 ---
-## The Problem
 
 Like many poor postgraduate students, I'm currently in the process of putting
 together the giant monster that is my PhD dissertation. After learning my

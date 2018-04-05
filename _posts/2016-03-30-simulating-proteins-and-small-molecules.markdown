@@ -3,7 +3,10 @@ layout: post
 title: "Simulating Proteins and Small Molecules Using Supercomputers"
 date: 2016-03-30 14:03:09 +1100
 comments: true
-categories: molecularmodelling science
+categories: Science
+tags:
+- molecular modelling
+- paper
 ---
 Recently myself and others published a paper where we were looking at
 characterising how a small (drug-like) molecule binds to a protein using
