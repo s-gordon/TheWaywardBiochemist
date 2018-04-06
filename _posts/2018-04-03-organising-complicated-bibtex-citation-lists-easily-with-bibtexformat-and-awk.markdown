@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cleaning Up Your BibTex Files with Bibtexformat and Sed"
+title: "Cleaning Up Your BibTex Files with Bibtexformat and Perl"
 date: 2018-04-03 11:06:28 +1100
 comments: true
 sharing: true
@@ -10,8 +10,7 @@ tags:
 - bibtex
 - biblatex
 - latex
-- awk
-- sed
+- perl
 - citations
 - programming
 - unix
@@ -37,7 +36,7 @@ not trivial. For instance, many citations contain special glyphs (e.g.
 diacritical marks such as á) that may or may not render appropriately depending
 on the character and how the document has been set up. As things stand, I'm at
 about 55,000 words and have more than 400 citations, and things are only going
-to get more complicated. Yikes!  While I could go through each citation with a
+to get more complicated. Yikes! While I could go through each citation with a
 fine tooth comb (I probably still will!), it'd be nice to have most of the
 bigger problems addressed programmatically to save me the headache. This post
 covers my solution to the problem.
@@ -63,7 +62,7 @@ BibTeX library:
 - Cross-platform (namely Linux, OSX, and Windows)
 - Needs to have a CLI (command-line interface)
 - Must have the following features:
-  - Detects incorrectly-formatted fields (e.g. author names where the prefix Jr
+  - Detects incorrectly formatted fields (e.g. author names where the prefix Jr
   is badly positioned relative to the surname)
   - Corrects wonky field indentation Allows switching between abbreviated and
   full journal names (e.g. Journal of Biological Chemistry vs. J Biol Chem vs
@@ -78,7 +77,7 @@ Several tools have a reasonably good go at doing this, including
 [biber](http://biblatex-biber.sourceforge.net/). While each have their
 strengths, no one solution catered to all of my needs. Enter
 [bibtexformat](https://github.com/yfpeng/pengyifan-bibtexformat), a neat
-cross-platform perl tool that allows for easy formatting of even very
+cross-platform perl tool that allows for easy formatting of even
 complicated bibtex libraries.
 
 ## bibtexformat
@@ -118,7 +117,7 @@ and see what works.
 
 I can run this easily from the command line, but how can I integrate it into
 Vim? Easy. I can get around this by mapping a new command in Vimscript. Getting
-this set up is easy.  Simply open up your vim startup file (typically
+this set up is easy. Simply open up your vim startup file (typically
 `$HOME/.vimrc` or `$HOME/.vim/vimrc`) and add the following function:
 
 ```vim
@@ -151,7 +150,7 @@ function BibTexFormat()
   " Don't capture sterr
   set shellredir=>
   " awk '/@/ {p=1}; / => Done/{p=0};p' --- remove header and footer garbage
-  " \s/á/{\\'{a}}/g; - correct acute diacritics
+  " \s/á/{\\\x27{a}}/g; - correct acute diacritics
   " \s/à/{\\`{a}}/g; - correct grave diacritics
   " \s/ä/{\\"{a}}/g; - correct umlaut diacritics
   read! 
@@ -160,11 +159,11 @@ function BibTexFormat()
         \sed '
         \s/–/--/g;
         \s/—/--/g;
-        \s/á/{\\'{a}}/g;
-        \s/é/{\\'{e}}/g;
-        \s/í/{\\'{i}}/g;
-        \s/ó/{\\'{o}}/g;
-        \s/ú/{\\'{u}}/g;
+        \s/á/{\\\x27{a}}/g;
+        \s/é/{\\\x27{e}}/g;
+        \s/í/{\\\x27{i}}/g;
+        \s/ó/{\\\x27{o}}/g;
+        \s/ú/{\\\x27{u}}/g;
         \s/à/{\\`{a}}/g;
         \s/è/{\\`{e}}/g;
         \s/ì/{\\`{i}}/g;
@@ -189,20 +188,20 @@ function BibTexFormat()
   " Don't capture sterr
   set shellredir=>
   " awk '/@/ {p=1}; / => Done/{p=0};p' --- remove header and footer garbage
-  " \s/á/{\\'{a}}/g; - correct acute diacritics
+  " \s/á/{\\\x27{a}}/g; - correct acute diacritics
   " \s/à/{\\`{a}}/g; - correct grave diacritics
   " \s/ä/{\\"{a}}/g; - correct umlaut diacritics
   read! 
         \bibtexformat % -format -wrap 80 -abb2 -sort -o - |
         \awk '/@/ {p=1}; / => Done/{p=0};p' |
-        \sed '
+        \perl -pne '
         \s/–/--/g;
         \s/—/--/g;
-        \s/á/{\\'{a}}/g;
-        \s/é/{\\'{e}}/g;
-        \s/í/{\\'{i}}/g;
-        \s/ó/{\\'{o}}/g;
-        \s/ú/{\\'{u}}/g;
+        \s/á/{\\\x27{a}}/g;
+        \s/é/{\\\x27{e}}/g;
+        \s/í/{\\\x27{i}}/g;
+        \s/ó/{\\\x27{o}}/g;
+        \s/ú/{\\\x27{u}}/g;
         \s/à/{\\`{a}}/g;
         \s/è/{\\`{e}}/g;
         \s/ì/{\\`{i}}/g;
