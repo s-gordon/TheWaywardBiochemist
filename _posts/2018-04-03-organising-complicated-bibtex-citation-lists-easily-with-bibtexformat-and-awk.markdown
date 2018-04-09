@@ -2,7 +2,7 @@
 layout: post
 title: "Cleaning Up Your BibTex Files with Bibtexformat and Perl"
 date: 2018-04-03 11:06:28 +1100
-header-img: "img/person-writing.jpg"
+header-img: "img/person-writing.png"
 comments: true
 sharing: true
 categories: Programming

@@ -6,13 +6,14 @@
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
+  <meta property="og:description" content="{{ page.title }}" />
 
   {% if page.header-img %}
-    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+    <meta property="og:image:600" content="{{ site.url }}/{{ page.header-img }}" />
   {% endif %}
 
   {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
+    <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
