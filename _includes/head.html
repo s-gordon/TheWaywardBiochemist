@@ -7,6 +7,10 @@
 
   <meta name="author" content="{{ site.author.name }}" />
 
+  {% if page.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+  {% endif %}
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
