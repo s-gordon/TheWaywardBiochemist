@@ -19,6 +19,8 @@ tags:
 - bibtexformat
 ---
 
+![Getting started with bibtex entries](/img/computer-facing-code.png "Getting started with bibtex entries")
+
 In a previous [post]({% post_url
 2018-04-03-organising-complicated-bibtex-citation-lists-easily-with-bibtexformat-and-awk
 %}) I covered how you can easily format and organise a bibtex bibliography from
