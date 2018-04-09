@@ -18,7 +18,7 @@ tags:
 - bibtexformat
 ---
 
-![Time to tidy up those bibtex libraries](/img/person-writing.png "Time to tidy up those bibtex libraries")
+![Time to tidy up those bibtex libraries]("/img/person-writing.png" "Time to tidy up those bibtex libraries")
 
 Like many poor postgraduate students, I'm currently in the process of putting
 together the giant monster that is my PhD dissertation. After learning my
