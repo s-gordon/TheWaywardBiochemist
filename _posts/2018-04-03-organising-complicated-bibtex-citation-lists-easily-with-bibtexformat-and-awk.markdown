@@ -2,7 +2,8 @@
 layout: post
 title: "Cleaning Up Your BibTex Files with Bibtexformat and Perl"
 date: 2018-04-03 11:06:28 +1100
-header-img: "img/person-writing.png"
+header-img: "/img/person-writing.png"
+bigimg: "/img/person-writing.png"
 comments: true
 sharing: true
 categories: Programming
@@ -17,8 +18,6 @@ tags:
 - unix
 - bibtexformat
 ---
-
-![Time to tidy up those bibtex libraries]("/img/person-writing.png" "Time to tidy up those bibtex libraries")
 
 Like many poor postgraduate students, I'm currently in the process of putting
 together the giant monster that is my PhD dissertation. After learning my

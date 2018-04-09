@@ -3,6 +3,7 @@ layout: post
 title: "Pull Full Bibliographic Records Easily Within Vim With CrossRef"
 date: 2018-04-07 14:30:00 +1100
 header-img: "img/computer-facing-code.png"
+bigimg: /img/computer-facing-code.png
 comments: true
 sharing: true
 categories: Programming
@@ -18,8 +19,6 @@ tags:
 - unix
 - bibtexformat
 ---
-
-![Getting started with bibtex entries](/img/computer-facing-code.png "Getting started with bibtex entries")
 
 In a previous [post]({% post_url
 2018-04-03-organising-complicated-bibtex-citation-lists-easily-with-bibtexformat-and-awk
