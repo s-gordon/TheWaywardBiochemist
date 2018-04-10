@@ -8,10 +8,6 @@
   <meta name="author" content="{{ site.author.name }}" />
   <meta property="og:description" content="{{ page.title }}" />
 
-  {% if page.header-img %}
-    <meta property="og:image" content="{{ site.baseurl }}/{{ page.header-img }}" />
-  {% endif %}
-
   {% if page.subtitle %}
     <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
@@ -89,9 +85,9 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
+    <meta property="og:image" content="{{ site.baseurl }}/{{ page.share-img }}" />
   {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
 
 

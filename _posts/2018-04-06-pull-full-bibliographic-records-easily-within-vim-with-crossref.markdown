@@ -3,6 +3,7 @@ layout: post
 title: "Pull Full Bibliographic Records Easily Within Vim With CrossRef"
 date: 2018-04-07 14:30:00 +1100
 header-img: "img/computer-facing-code.png"
+share-img: "img/computer-facing-code.png"
 bigimg: /img/computer-facing-code.png
 comments: true
 sharing: true

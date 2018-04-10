@@ -3,6 +3,7 @@ layout: post
 title: "A Better Insert for Settlers of Catan"
 date: 2018-01-29 17:27:05 +1100
 header-img: "/img/catan-game.png"
+share-img: "/img/catan-game.png"
 bigimg: "/img/catan-game.png"
 comments: true
 sharing: true

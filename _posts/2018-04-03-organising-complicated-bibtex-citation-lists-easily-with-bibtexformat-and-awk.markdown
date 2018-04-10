@@ -3,6 +3,7 @@ layout: post
 title: "Cleaning Up Your BibTex Files with Bibtexformat and Perl"
 date: 2018-04-03 11:06:28 +1100
 header-img: "/img/person-writing.png"
+share-img: "/img/person-writing.png"
 bigimg: "/img/person-writing.png"
 comments: true
 sharing: true

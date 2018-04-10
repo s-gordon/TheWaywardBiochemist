@@ -3,6 +3,7 @@ layout: post
 title: "Simulating Proteins and Small Molecules Using Supercomputers"
 date: 2016-03-30 14:03:09 +1100
 header-img: "/img/molecule.png"
+share-img: "/img/molecule.png"
 bigimg: "/img/molecule.png"
 comments: true
 categories: Science
