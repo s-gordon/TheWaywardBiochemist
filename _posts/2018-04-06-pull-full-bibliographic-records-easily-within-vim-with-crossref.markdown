@@ -81,8 +81,8 @@ Vim by mapping it to a custom command. Let's call that Vim normal mode command
 
 ```vim
 " Simple command 'Doi' that takes single DOI as argument
-command! -nargs=+ Doi r !
-      \curl -sLH "Accept: application/x-bibtex"
+command! -nargs=+ Doi r
+      \!curl -sLH "Accept: application/x-bibtex"
       \http://dx.doi.org/<q-args>
 ```
 
@@ -142,8 +142,8 @@ Whew! Putting that all together with the original command gives us the following
 " \s/á/{\\\x27{a}}/g; - correct acute diacritics
 " \s/à/{\\`{a}}/g; - correct grave diacritics
 " \s/ä/{\\"{a}}/g; - correct umlaut diacritics
-command! -nargs=+ Doi r ! 
-      \curl -sLH "Accept: application/x-bibtex"
+command! -nargs=+ Doi r
+      \!curl -sLH "Accept: application/x-bibtex"
       \http://dx.doi.org/<q-args> |
       \perl -pne 
       \'
