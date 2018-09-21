@@ -118,6 +118,11 @@
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
 
+  <!-- share link images -->
+  {% if page.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+  {% endif %}
+
   {% if site.matomo %}
   {% include matomo.html %}
   {% endif %}
