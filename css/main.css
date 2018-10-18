@@ -517,6 +517,10 @@ footer .theme-by {
   }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
+    height: 400px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading  {
@@ -527,6 +531,8 @@ footer .theme-by {
   }
   .intro-header .post-heading h1 {
     font-size: 50px;
+    margin-left: -80px;
+    margin-right: 120px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;
