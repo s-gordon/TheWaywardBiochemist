@@ -30,7 +30,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 ruby ">= 2.4.3"
 
-gem "bundler"
+gem "bundler", ">=1.16.1"
 
 gem "rack-jekyll"
 
