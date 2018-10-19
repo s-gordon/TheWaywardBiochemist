@@ -39,3 +39,6 @@ gem "rack-jekyll"
 gem 'jekyll-paginate'
 
 gem 'jekyll-sitemap'
+
+# enable compression
+gem 'jekyll-gzip'
