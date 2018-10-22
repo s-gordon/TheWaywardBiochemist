@@ -234,13 +234,18 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-assets
 
 assets:
+  prefix: "/assets"
   gzip: true
-  cache: true
   destination: "/assets"
   compression: false  # true on JEKYLL_ENV=production
   source_maps: true  # false on JEKYLL_ENV=production
+  sources:
+    - _assets/css
+    - _asstes/img
+    - _assets_js
   compress:
     js: uglifier  # true on JEKYLL_ENV=production
     css: sass  # true on JEKYLL_ENV=production

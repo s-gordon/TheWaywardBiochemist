@@ -43,3 +43,5 @@ gem 'jekyll-sitemap'
 # enable compression
 # gem 'jekyll-gzip'
 gem 'jekyll-assets', group: :jekyll_plugins
+gem 'uglifier'
+gem 'sass'

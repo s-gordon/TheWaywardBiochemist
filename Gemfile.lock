@@ -103,6 +103,8 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.1.19)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
@@ -116,7 +118,9 @@ DEPENDENCIES
   jekyll-sitemap
   minima (~> 2.0)
   rack-jekyll
+  sass
   tzinfo-data
+  uglifier
 
 RUBY VERSION
    ruby 2.5.1p57
