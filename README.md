@@ -1,21 +1,20 @@
-# Beautiful Jekyll
+# The Wayward Biochemist
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
+Based on **Bautiful Jekyll**:
+
 > *Copyright 2018 [Dean Attali](http://deanattali.com)*
+> **Beautiful Jekyll** is a ready-to-use template to help you create an awesome
+> website quickly. Perfect for personal sites, blogs, or simple project
+> websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what
+> you'll get after just two minutes.  You can also look at [my personal
+> website](http://deanattali.com) to see it in use, or see examples of websites
+> other people created using this theme
+> [here](#showcased-users-success-stories).
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#showcased-users-success-stories).
-
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
-
-<p align="center">
-  <a href="https://www.paypal.me/daattali">
-    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" />
-  </a>
-</p>
-
-### Table of contents
+## Table of contents
 
 - [Prerequisites](#prerequisites)
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
@@ -23,7 +22,6 @@
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Features](#features)
 - [Creating a User Page vs a Project Page](#creating-a-user-page-vs-a-project-page)
-- [Showcased users (success stories!)](#showcased-users-success-stories)
 - [Advanced: local development](#advanced-local-development-using-docker)
 - [FAQ and support](#faq-and-support)
 - [Credits and contributions](#credits)
@@ -72,14 +70,21 @@ As mentioned previously, you can use [prose.io](http://prose.io/) to add or edit
 
 ## Last important thing: YAML front matter ("parameters" for a page)
 
-In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. This is where you'll give each page some parameters that I made available, such as a title and subtitle. I'll go into more detail about what parameters are available later. If you don't want to use any parameters on your new page (this also means having no title), then use the empty YAML front matter:
+In order to have your new pages use this template and not just be plain pages,
+you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to
+the top of each page. This is where you'll give each page some parameters that I
+made available, such as a title and subtitle. I'll go into more detail about
+what parameters are available later. If you don't want to use any parameters on
+your new page (this also means having no title), then use the empty YAML front
+matter:
 
 ```
 ---
 ---
 ```
 
-If you want to use any parameters, write them between the two lines. For example, you can have this at the top of a page:
+If you want to use any parameters, write them between the two lines. For
+example, you can have this at the top of a page:
 
 ```
 ---
@@ -88,10 +93,12 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
+You can look at the top of [`aboutme.md`](./aboutme.md) or
+[`index.html`](./index.html) as more examples.
 
-**Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
-If you don't include YAML then your file will not use the template.
+**Important takeaway: ALWAYS add the YAML front matter, which is two lines with
+three dashes, to EVERY page. If you have any parameters, they go between the two
+lines.**     If you don't include YAML then your file will not use the template.
 
 ## Features
 
@@ -167,43 +174,6 @@ If you want to use this theme to create a website for a particular repository, i
 1. In the configuration file (`_config.yml`), you should set `baseurl` to be `/projectname` instead of `""`.
 2. Project Pages are served from a branch named `gh-pages`, and you should be generating all the website content on that branch. When you fork Beautiful Jekyll, you'll already have a `gh-pages` branch but you should delete it and generate it again from the `master` branch. The reason is that the `gh-pages` branch in its current form does not have the updated code of Beautiful Jekyll, so you need to create that branch from the `master` branch (which is where all my new features and work go into).
 
-## Showcased users (success stories!)
-
-To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months alone! Here is a hand-picked selection of some websites that use Beautiful Jekyll.
-
-Want your website featured here? [Contact me](http://deanattali.com/aboutme#contact) to let me know about your website.
-
-### Project/company websites
-
-| Website | Description |
-| :------ |:----------- |
-| [repidemicsconsortium.org/](http://www.repidemicsconsortium.org/) | R Epidemics Consortium |
-| [vaccineimpact.org](https://www.vaccineimpact.org/) | Vaccine Impact Modelling Consortium |
-| [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
-| [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
-| [joecks.github.io/clipboard-actions](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
-| [deanattali.com/shinyjs](http://deanattali.com/shinyjs/) | shinyjs - an R package |
-| [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
-| [reactionic.github.io](http://reactionic.github.io) | Create iOS and Android apps with React and Ionic |
-| [ja2-stracciatella.github.io](http://ja2-stracciatella.github.io) | Jagged Alliance 2 Stracciatella |
-| [ddocent.com](http://ddocent.com/) | RADSeq Bioinformatics and Beyond |
-
-### Personal websites
-
-| Website | Who | What |
-| :------ |:--- | :--- |
-| [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
-| [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
-| [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
-| [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
-| [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
-| [kootenpv.github.io](http://kootenpv.github.io/) | Pascal van Kooten | Data analytics |
-| [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
-| [anudit.in](http://www.anudit.in/) | Anudit Verma | Engineering student |
-| [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
-| [ocram85.github.io](https://ocram85.github.io) | Marco Blessing | A personal blog about PowerShell and automation |
-
-
 ## Advanced: Local development using Docker
 
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps set that up with Docker:
@@ -241,12 +211,6 @@ Whenever you make any changes to `_config.yml`, you must stop and re-start the s
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
 
-## FAQ and support
-
-If you need any help, I suggest heading over to the [Jekyll support forum](https://talk.jekyllrb.com/).
-
-Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](http://jekyllrb.com/) or with Google.
-
 #### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
 Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file. The configuration file has many adjustable parameters to customize your site.
@@ -257,7 +221,14 @@ Easy! Just place a valid `favicon.ico` (or another valid favicon image) in the r
 
 #### How do I move the blog to another page instead of having it on the home page?
 
-The default style of Beautiful Jekyll is to feature the blog feed on the front page. But for many sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a parameter `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
+The default style of Beautiful Jekyll is to feature the blog feed on the front
+page. But for many sites that's not the ideal structure, and you may want to
+have a separate dedicated page for the blog posts. To have the blog hosted on a
+different URL (for example at `<mysite.com>/blog`), copy the `index.html` file
+into a folder with the same name as the desired page (for example, to
+`blog/index.html`), and in the `_config.yml` file you need to add a parameter
+`paginate_path: "/<page name>/page:num/"` (for example `paginate_path:
+"/blog/page:num/"`).
 
 #### What size do you recommend using for the `bigimg` photos?
 
@@ -281,4 +252,9 @@ If you do fork or clone this project to use as a template for your site, I would
 
 ## Known limitations
 
-- If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.
+If you have a project page and you want a custom 404 page, you must have a
+custom domain. See
+![Custom 404](https://help.github.com/articles/custom-404-pages/). This
+means that if you have a regular User Page you can use the 404 page from this
+theme, but if it's a website for a specific repository, the 404 page will not be
+used.

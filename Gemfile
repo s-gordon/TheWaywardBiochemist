@@ -41,4 +41,5 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 
 # enable compression
-gem 'jekyll-gzip'
+# gem 'jekyll-gzip'
+gem 'jekyll-assets', group: :jekyll_plugins
