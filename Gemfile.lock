@@ -119,6 +119,7 @@ DEPENDENCIES
   minima (~> 2.0)
   rack-jekyll
   sass
+  sprockets
   tzinfo-data
   uglifier
 

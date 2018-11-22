@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "PhD Thesis Run-Down"
-date: 2018-09-17 19:34:00 +1100
-header-img: "img/road.png"
-share-img: "img/road.png"
-bigimg: /img/road.png
+date: 2018-11-22 14:34:00 +1100
+header-img: "img/path.jpg"
+share-img: "img/path.jpg"
+bigimg: /img/path.jpg
 comments: true
 sharing: true
 categories: Science

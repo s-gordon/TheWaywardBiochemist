@@ -245,7 +245,7 @@ assets:
   sources:
     - _assets/css
     - _asstes/img
-    - _assets_js
+    - _assets/js
   compress:
     js: uglifier  # true on JEKYLL_ENV=production
     css: sass  # true on JEKYLL_ENV=production

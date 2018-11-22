@@ -45,3 +45,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-assets', group: :jekyll_plugins
 gem 'uglifier'
 gem 'sass'
+gem 'sprockets'
